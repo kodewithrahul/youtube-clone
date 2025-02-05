@@ -1,0 +1,139 @@
+.header-section {
+    height: 75px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+
+.logo img {
+    width: 45px;
+}
+
+.logo p {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search input {
+    padding: 10px 16px;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #444;
+}
+
+.search img {
+    width: 20px;
+    /* padding: 12px; */
+    margin-left: 12px;
+    cursor: pointer;
+
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.profile a:link,
+.profile a:visited {
+    color: #000;
+    text-decoration: none;
+    margin-right: 32px;
+
+    background-color: #ddd;
+    padding: 8px 28px;
+    border-radius: 22px;
+}
+
+@media screen and (max-width: 800px) {
+    .profile a:link,
+    .profile a:visited {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .search {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header-section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .profile {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .profile {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .profile {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .profile {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .profile {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .profile {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .profile {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .profile {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .profile {
+        width: 30%;
+    }
+}
